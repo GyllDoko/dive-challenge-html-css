@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace, sans-serif;
+}
+
+.cover {
+  background-image: url("./images/bg.jpg");
+  background-repeat: no-repeat;
+  height: 48vh;
+  background-size: cover;
+  background-position: center;
+}
+header {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+}
+header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+header img {
+  width: 190px;
+}
+
+header nav {
+  padding-left: 30px;
+}
+header nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header nav li {
+  float: left;
+  list-style: none;
+  margin-left: 40px;
+}
+
+header nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.35rem;
+}
+
+.landing-text p {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  background-color: rgba(148, 233, 130);
+  padding: 15px;
+  border-radius: 50px;
+}
+.landing-text p .contactez-nous {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.landing-text {
+  padding-left: 60px;
+}
+.landing-text h2 {
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  width: 400px;
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 1px;
+}
+
+.landing-text .scrool {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 43vh;
+}
+section {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+section.services {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 20vh;
+}
+
+.services .service-items {
+  margin: 30px;
+  text-decoration: none;
+}
+
+.services .service-items div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services .service-items div .delivery-icon {
+  font-size: 60px;
+  color: rgba(148, 233, 130);
+}
+.services .service-items p {
+  color: black;
+  font-size: 1.2rem;
+  width: 90%;
+  text-align: center;
+}
+
+section h1 {
+  font-size: 4.2rem;
+  font-family: "Abril Fatface", cursive;
+  position: relative;
+}
+section h1.section-titre::before {
+  content: "";
+  background-color: rgba(148, 233, 130);
+  width: 70px;
+  height: 8px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.best-plantes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.plante-box {
+  width: 100%;
+  margin: 5px;
+  position: relative;
+}
+
+.plante1 {
+  background-image: url("./images/nos_meilleures_ventes/1.jpg");
+  min-height: 50vh;
+  background-position: center;
+  background-size: cover;
+  width: 250;
+}
+.plante2 {
+  background-image: url("./images/nos_meilleures_ventes/2.jpg");
+  min-height: 50vh;
+  background-position: center;
+  background-size: cover;
+}
+.plante3 {
+  background-image: url("./images/nos_meilleures_ventes/3.jpg");
+  min-height: 50vh;
+  background-position: center;
+  background-size: cover;
+}
+.plante4 {
+  background-image: url("./images/nos_meilleures_ventes/4.jpg");
+  min-height: 50vh;
+  background-position: center;
+  background-size: cover;
+}
+.plante-box .plante-details {
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(255, 255, 255, 0.897);
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.plante-name,
+#modal-name {
+  color: black;
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 5px 0;
+}
+.plante-price,
+#modal-price {
+  color: rgba(148, 233, 130);
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 5px 0;
+}
+.plantes-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+
+.plante-grid1 {
+  background-image: url("./images/nos_plantes/1.jpg");
+  background-position: center;
+  background-size: cover;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 80vh;
+  display: relative;
+}
+
+.plante-grid2 {
+  background-image: url("./images/nos_plantes/2.jpg");
+  background-position: center;
+  background-size: cover;
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.plante-grid3 {
+  background-image: url("./images/nos_plantes/3.jpg");
+  background-position: center;
+  background-size: cover;
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.plante-grid4 {
+  background-image: url("./images/nos_plantes/4.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 35vh;
+}
+.plante-grid5 {
+  background-image: url("./images/nos_plantes/5.jpg");
+  background-position: center;
+  background-size: cover;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.plante-grid6 {
+  background-image: url("./images/nos_plantes/6.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.grid-box {
+  display: flex;
+  align-items: flex-end;
+}
+.grid-box .plante-details {
+  background-color: rgba(255, 255, 255, 0.897);
+  width: 100%;
+  padding: 10px 20px;
+}
+footer {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 0 100px;
+}
+
+footer .contactez-nous {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  background-color: rgba(148, 233, 130);
+  padding: 15px;
+  border-radius: 50px;
+}
+
+footer p {
+  font-size: 1.5rem;
+}
+.modal-section {
+  position: fixed;
+  top: 0;
+  z-index: 90;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.432);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.myModal {
+  background-color: white;
+  width: 40vw;
+  z-index: 99;
+  position: fixed;
+  top: 20px;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+.myModal .modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  border-bottom: 1px solid black;
+}
+.myModal .modalHeader p {
+  font-size: 1.3rem;
+}
+.myModal .modalHeader button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-size: 1em;
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 10px;
+}
+.myModal .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.myModal .content p {
+  text-align: justify;
+}
+.myModal .modalFooter {
+  padding: 20px 10px;
+}
+.myModal .modalFooter::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.myModal .modalFooter a {
+  float: right;
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: rgba(148, 233, 130);
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+}
+.image-container {
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
